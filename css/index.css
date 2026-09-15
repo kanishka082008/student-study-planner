@@ -1,0 +1,82 @@
+:root {
+    --dusty-grape: #564787;
+    --thistle: #DBCBD8;
+    --azure-mist: #F2FDFF;
+    --pearl-aqua: #9AD4D6;
+    --prussian-blue: #101935;
+    --white: #FFFFFF;
+}
+
+/* Whole page */
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--azure-mist);
+    color: var(--prussian-blue);
+}
+
+/* Navigation */
+.navi {
+    text-align: right;
+    padding: 15px;
+    background-color: var(--prussian-blue);
+}
+
+.navi a {
+    color: var(--white);
+    text-decoration: none;
+    margin: 10px;
+}
+
+.navi a:hover {
+    color: var(--pearl-aqua);
+}
+
+/* Cards */
+.box {
+    background-color: var(--white);
+    border: 2px solid var(--pearl-aqua);
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+    margin: 15px;
+}
+
+/* Schedule table */
+.border {
+    border-spacing: 10px;
+    width: 500px;
+}
+
+.border th {
+    background-color: var(--dusty-grape);
+    color: var(--white);
+}
+
+.border th,
+.border td {
+    border: 1px solid var(--thistle);
+    padding: 10px;
+}
+
+/* Upcoming deadlines table */
+.deadlines-table {
+    border-spacing: 10px;
+    width: 400px;
+}
+
+.deadlines-table td {
+    padding: 10px;
+    border-bottom: 1px solid var(--thistle);
+}
+
+/* Footer */
+footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 15px;
+    background-color: var(--thistle);
+}
